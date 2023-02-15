@@ -7,8 +7,6 @@ import { Divider } from "../Divider/Divider";
 
 import { Container } from "./styles";
 
-import DividerIcon from "../../../public/divider";
-
 export const BoardingPass = () => {
   return (
     <Container>
