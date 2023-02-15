@@ -21,25 +21,25 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Rubik', sans-serif;
 
         h1 {
-            font-size: 40px;
+            font-size: 2.5rem; // 40px
             font-weight: 500;
             color: var(--black);
         }
 
         h3 {
-            font-size: 14px;
+            font-size: 0.875rem; // 14px
             font-weight: 400;
             color: var(--gray);
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 1rem; // 16px
             font-weight: 500;
             color: var(--black);
         }
 
         p {
-            font-size: 16px;
+            font-size: 1rem; // 16px
             font-weight: 400;
             color: var(--black);
         }

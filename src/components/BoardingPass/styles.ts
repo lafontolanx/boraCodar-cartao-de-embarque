@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 544px;
-    width: 327px;
+    width: 20.438rem; // 327px 
     display: flex;
     flex-direction: column;
+
+    background-color: var(--white);
+    border-radius: 1.5rem; // 24px 
+
+    @media screen and (max-width: 768px) {
+        background-color: transparent;
+    }
 `
 
 export const Flight = styled.div`
-    background-color: var(--white);
-    border-radius: 24px 24px 0 0;
-
     @media screen and (max-width: 768px) {
-        border-radius: 24px;
+        background-color: var(--white);
+        border-radius: 1.5rem; // 24px
     }
 
     display: flex;
@@ -34,7 +38,12 @@ export const FlightDate = styled.div`
 `
 
 export const FlightTime = styled.div`
-    padding: 0 2rem 1.5rem 2rem;; 
+    padding: 0 2rem .75rem 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem 1.5rem 2rem;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,20 +69,24 @@ export const Arrival = styled.div`
 
     .arrivalTime p:nth-child(2){
         font-weight: 500;
-        font-size: 10px;
+        font-size: 0.625rem; // 10px
     }
 `
 
 export const Passanger = styled.div`
     background-color: var(--white);
 
-    padding: 1.5rem 2rem;
+    padding: .75rem 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 1.5rem 2rem;
+    }
 
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
-        border-radius: 24px;
+        border-radius: 1.5rem; // 24px
     }
 `
 
@@ -84,12 +97,17 @@ export const PassangerSeat = styled.div`
 `
 
 export const Boarding = styled.div`
-    padding: 1.5rem 2rem;
-    background-color: var(--white);
-    border-radius: 0 0 24px 24px;
+    padding: .75rem 2rem 1.5rem 2rem;
 
     @media screen and (max-width: 768px) {
-        border-radius: 24px;
+        padding: 1.5rem 2rem;
+    }
+
+    background-color: var(--white);
+    border-radius: 0 0 1.5rem 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        border-radius: 1.5rem; // 24px
     }
 `
 
@@ -122,9 +140,9 @@ export const BoardingTime = styled.div`
     .boardingTime {
         background-color: var(--purple-300);
         color: var(--white);
-        height: 27px;
-        width: 54px;
-        border-radius: 8px;
+        height: 1.688rem; // 27px
+        width: 3.375rem; // 54px
+        border-radius: .5rem; // 8px
 
         display: flex;
         justify-content: center;
@@ -143,25 +161,51 @@ export const BoardingQRCode = styled.div`
 `
 
 export const DividerIcon = styled.div`
-    background-color: var(--white);
-    width: 279px;
+    background-color: transparent;
+    width: 20.438rem; // 327px
     display: flex;
-    justify-content: center;
-    left: 24px;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    .circle1 {
+        position: relative;
+        left: -0.75rem; // -12px
+    }
+
+    .circle2 {
+        position: relative;
+        left: 0.75rem; // 12px
+    }
+
+    .top .circle {
+        background-color: #5E3FA6;
+    }
+
+    .bottom .circle {
+        background-color: #543895;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-color: var(--white);
+        width: 17.438rem; // 278px
+        position: relative;
+        left: 1.5rem; // 24px
+    }
 `
 
-export const Circle = styled.div`
-    background-color: var(--purple-300);
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-
-    display: flex;
+export const CircleIcon = styled.div`
+    background-color: transparent;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
+`
+
+export const Circle = styled.div`
+    width: 1.5rem; // 24px
+    height: 1.5rem; // 24px
+    border-radius: 50%;
+    position: relative;
 `
 
 

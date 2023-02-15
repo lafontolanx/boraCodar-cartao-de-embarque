@@ -21,7 +21,8 @@ import {
   BoardingGate,
   BoardingQRCode,
   DividerIcon,
-  Circle
+  Circle,
+  CircleIcon
 } from "./styles";
 import Airplane from "../../../public/airplane"
 import QRcode from "../../../public/qrcode"
@@ -69,9 +70,15 @@ export const BoardingPass = () => {
       </Flight>
 
       <DividerIcon>
-        <Circle />
+        <CircleIcon className="circle1 top">
+          <Circle className="circle"/>
+        </CircleIcon>
+        
         <Divider />
-        <Circle />
+
+        <CircleIcon className="circle2 top">
+          <Circle className="circle"/>
+        </CircleIcon>
       </DividerIcon>
 
       <Passanger>
@@ -89,7 +96,15 @@ export const BoardingPass = () => {
       </Passanger>
 
       <DividerIcon>
+        <CircleIcon className="circle1 bottom">
+          <Circle className="circle"/>
+        </CircleIcon>
+        
         <Divider />
+
+        <CircleIcon className="circle2 bottom">
+          <Circle className="circle"/>
+        </CircleIcon>
       </DividerIcon>
 
       <Boarding>
