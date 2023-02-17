@@ -17,12 +17,8 @@ export const Container = styled.div`
         left: 0.75rem; // 12px
     }
 
-    .top .circle {
-        background-color: #5E3FA6;
-    }
-
-    .bottom .circle {
-        background-color: #543895;
+    .circle {
+        background-color: var(--purple);
     }
 
     @media screen and (max-width: 768px) {

@@ -4,7 +4,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         height: 100vh;
         background-color: var(--purple); /* For browsers that do not support gradients */
-        background-image: linear-gradient(var(--purple), var(--purple-900));
     }
     :root {
         --white: #fff;

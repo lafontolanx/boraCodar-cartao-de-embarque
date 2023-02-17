@@ -7,21 +7,16 @@ import {
 
 import DividerIcon from "../../../public/divider";
 
-interface DividerProps {
-    name: string;
-    name2: string;
-}
-
-export const Divider = ({name, name2}: DividerProps) => {
+export const Divider = () => {
     return (
         <Container>
-            <CircleIcon className={name}>
+            <CircleIcon className="circle1">
                 <Circle className="circle"/>
             </CircleIcon>
             
             <DividerIcon />
 
-            <CircleIcon className={name2}>
+            <CircleIcon className="circle2">
                 <Circle className="circle"/>
             </CircleIcon>
         </Container>

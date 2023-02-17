@@ -11,15 +11,9 @@ export const BoardingPass = () => {
   return (
     <Container>
       <Flight />
-      <Divider 
-        name="circle1 top"
-        name2="circle2 top"
-      />
+      <Divider />
       <Passanger />
-      <Divider 
-        name=" circle1 bottom"
-        name2="circle2 bottom"
-      />
+      <Divider />
       <Boarding />
     </Container>
   
